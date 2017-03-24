@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>fancypromo</name>
+	<displayName><![CDATA[fancypromo]]></displayName>
+	<version><![CDATA[1.1.0]]></version>
+	<description><![CDATA[lorem]]></description>
+	<author><![CDATA[darwin]]></author>
+	<tab><![CDATA[others]]></tab>
+</module>
