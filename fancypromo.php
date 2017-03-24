@@ -83,9 +83,18 @@ class FancyPromo extends Module
      */
     public function hookdisplayLeftColumnProduct()
     {
-       // $this->context->controller->addJS($this->_path.'/views/js/front.js');
+        // $this->context->controller->addJS($this->_path.'/views/js/front.js');
         //$this->context->controller->addCSS($this->_path.'/views/css/front.css');
 
-        return $this->display(__FILE__, 'views/templates/front/column.tpl');
+        $id_customer = $this->context->customer->id;
+
+        $customergroup = Customer::getDefaultGroupId((int)$id_customer);
+       
+        if($customergroup == 6){ 
+             return $this->display(__FILE__, 'views/templates/front/column.tpl');
+        }
+
+       
+       
     }
 }
